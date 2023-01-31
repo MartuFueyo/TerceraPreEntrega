@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    text-align: center;
+    font-family:'Montserrat',sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: grid;
+    padding: 34px;
+    margin: 0px;
+    grid-template-columns: 1fr;
+    font-size: large;
+    min-width: 100vh;
+    background-color: #000C66;
+}
+.imagen{  
+        
+        h1 {
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 1em;
+    }
+    img {
+        position: relative;
+    }
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.imagen {
+    grid-area: imagen;
+}
+
+.titulo {
+    grid-area: titulo;
+}
+
+.row {
+    grid-area: carousel;
+}
+
+.downimg {
+    grid-area: downimg;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media  (min-width:500px) {
+    body{
+        margin-bottom: 1em;
+        grid-template-areas: 
+        'header'
+        'nav'
+        'titulo'
+        'row'
+        'footer';
+    }
+
+    .imagen{  
+        display: flex;
+        
+        h1 {
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin: 1em;
+        font-size: 2.8em;
+        flex-direction: column;
+        justify-content: center;
+    }
+    img {
+        position: relative;
+    }
+}
+
+}
+@media (min-width:991px) {
+    body{
+        margin-bottom: 1em;
+        grid-template-areas: 
+        'header'
+        'nav'
+        'titulo'
+        'row'
+        'footer';
+    }
+
+    .imagen{  
+        display: flex;
+            h1 {
+                color: white;
+                text-align: center;
+                padding: 10px;
+                margin: 1em;
+                font-size: 3.5em;
+                flex-direction: column;
+            }
+            img {
+                position: relative;
+            }
+        }
+
+    }
+
+@media (min-width:1349px) {
+body{
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    background-color: aliceblue;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    padding: 10px;
+    margin-left: 0;
+    flex-direction: column;
+    font-size: large;
+    min-width: 100vh;
+    background-color: #000C66;}
+
+.imagen{
+        display:flex;
+}
+
+nav{
+    justify-items: none;
+}
+
+.imagen{  
+        
+    h1 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 75px;
+}
+img {
+    position: relative;
+}
+}
+
+.titulo{
+    font-size: 60px;
+    padding: 0px;
+    text-align: center;
+}
+.carousel-inner{
+    margin: 50px;
+    margin-inline:300px;
+}
+
+.downimg{
+    font-size: 20px;
+    text-align: center;
+}
+}

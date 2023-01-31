@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    text-align: center;
+    font-family:'Montserrat',sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: grid;
+    padding: 34px;
+    margin: 0px;
+    grid-template-columns: 1fr;
+    font-size: large;
+    min-width: 100vh;
+    background-color: #000C66;
+}
+.imagen{  
+        
+        h1 {
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 1em;
+    }
+    img {
+        position: relative;
+    }
+}
+
+footer {
+    padding: 3em;
+    background-color: #000c66;
+    margin-bottom: 0;
+    margin-top: 1.5em;
+    }
+
+.tarjetas{
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    justify-items: center;
+}
+.card{
+    margin: 20px;
+    padding: 20px;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.imagen {
+    grid-area: imagen;
+}
+
+.titulo {
+    grid-area: titulo;
+}
+
+.tarjetas {
+    grid-area: tarjetas;
+}
+
+.downimg {
+    grid-area: downimg;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media (min-with:500px) {
+
+    body {
+        margin-bottom: 1em;
+        grid-template-areas:
+            "header"
+            "nav nav"
+            "h1 h1"
+            "tarjetas tarjetas"
+            " footer footer";
+    }
+
+    .imagen{  
+        display: flex;
+        
+        h1 {
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin: 1em;
+        font-size: 2.8em;
+        flex-direction: column;
+        justify-content: center;
+    }
+    img {
+        position: relative;
+    }
+}
+
+
+    .tarjetas {
+        margin: 5px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+        justify-items: center;
+    
+.card {
+        margin: 20px;
+        padding: 20px;
+    }
+} 
+}
+
+@media (min-width:991px){
+
+    body {
+        margin-bottom: 1em;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "h1 h1"
+            "tarjetas tarjetas"
+            " footer footer";
+    }
+
+.imagen{  
+    display: flex;
+        h1 {
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 1em;
+            font-size: 3.5em;
+            flex-direction: column;
+        }
+        img {
+            position: relative;
+        }
+    }
+
+    .tarjetas {
+        margin: 5px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .tituloserv {
+        padding: 20px;
+        margin: 20px;
+    }
+    .card {
+        margin: 30px;
+        padding: 10px;
+        overflow: hidden;
+        transition: all 1.5s;
+            &:hover{
+                transform: scale(1);
+    }
+    }
+}
+
+@media (min-width: 1349px) {
+    * {
+        padding: 0%;
+        margin: 0%;
+    }
+    
+    body {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }  
+
+    header{
+        display: flex;
+        padding: 34px;
+        margin: 0px;
+        flex-direction: column;
+        font-size: large;
+        min-width: 100vh;
+        background-color: #000C66;
+    }
+
+    .tarjetas{
+        margin: 5px;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    
+            .card{
+            margin: 50px;
+            padding: 9px;
+            overflow: hidden;
+            transition: all 1s;
+        }
+    }
+    
+        .card:hover{
+        transform: scale(1.5);
+    }
+
+    footer {
+        padding: 3em;
+        background-color: #000c66;
+        margin-bottom: 0;
+        margin-top: 1.5em;
+        }
+}
