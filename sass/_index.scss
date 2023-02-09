@@ -1,3 +1,4 @@
+@media (max-width:500px){ 
 * {
     padding: 0;
     margin: 0;
@@ -12,7 +13,7 @@ body{
 
 header {
     display: grid;
-    padding: 34px;
+    padding: 1em;
     margin: 0px;
     grid-template-columns: 1fr;
     font-size: large;
@@ -24,11 +25,11 @@ header {
         h1 {
         color: white;
         text-align: center;
-        padding: 10px;
+        padding: 1em;
         font-size: 1em;
     }
     img {
-        position: relative;
+        position: absolute;
     }
 }
 
@@ -58,6 +59,7 @@ nav {
 
 footer {
     grid-area: footer;
+}
 }
 
 @media  (min-width:500px) {

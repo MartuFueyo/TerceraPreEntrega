@@ -106,7 +106,7 @@ footer {
 
 .bloquedos {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
@@ -139,7 +139,7 @@ footer {
 
         .bloquedos {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr;
         }
 
@@ -189,18 +189,24 @@ img {
     width: $widht;
 }
 
+.bloquedos {
+    display: flex;
+
 .ubicacion{
     @include size(500px,800px );
     margin: 10px;
     margin-inline: 450px;
+    flex-direction: row;
     }
-.textoubi{
+
+    .textoubi{
     font-size: 45px;
     text-align: center;
     margin-top: 20px;
     margin-inline: 34px;
     padding: 53px;
-}    
+}  
+}  
 footer{
     padding: 9px;
     background-color: #000C66;
